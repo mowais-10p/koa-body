@@ -6,9 +6,9 @@ declare module "koa" {
     }
     interface Context {
         body: any;
-        log: Logger;
-        token: IJwtToken;
-        cognitoUser: ICognitoUser;
+        log: any;
+        token: any;
+        cognitoUser: any;
         accessToken: string;
         pagination: any;
     }
