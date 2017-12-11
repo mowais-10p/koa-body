@@ -1,19 +1,5 @@
 import * as Koa from "koa";
 
-declare module "koa" {
-    interface Request {
-        body: any;
-    }
-    interface Context {
-        body: any;
-        log: any;
-        token: any;
-        cognitoUser: any;
-        accessToken: string;
-        pagination: any;
-    }
-}
-
 declare namespace koaBody {
     interface IKoaBodyFormidableOptions {
         /**
